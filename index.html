@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CosmoYoga — Путь к гармонии</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">✦ CosmoYoga</div>
+    <div class="nav__links">
+      <a href="#about">О школе</a>
+      <a href="#directions">Направления</a>
+      <a href="#quiz">Диагностика</a>
+      <a href="#box">Коробка</a>
+      <a href="#packages">Пакеты</a>
+      <a href="#contact">Контакты</a>
+    </div>
+    <div class="nav__lang">
+      <select id="langSwitcher">
+        <option value="ru" selected>RU</option>
+        <option value="en">EN</option>
+        <option value="ko">KR</option>
+        <option value="ja">JP</option>
+        <option value="es">ES</option>
+      </select>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Меню">☰</button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__particles" id="particles"></div>
+    <div class="hero__content">
+      <h1 class="hero__title" data-i18n="hero.title">Космо Йога</h1>
+      <p class="hero__subtitle" data-i18n="hero.subtitle">Выход из сложных жизненных состояний через древние практики и современные технологии</p>
+      <div class="hero__buttons">
+        <a href="#quiz" class="btn btn--primary" data-i18n="hero.cta">Пройти диагностику</a>
+        <a href="#packages" class="btn btn--outline" data-i18n="hero.packages">Смотреть пакеты</a>
+      </div>
+    </div>
+    <div class="hero__scroll">↓</div>
+  </section>
+
+  <!-- О школе -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title" data-i18n="about.title">О школе</h2>
+      <div class="about__grid">
+        <div class="about__text">
+          <p data-i18n="about.p1">Мы объединяем мудрость тибетской медицины, энергетические практики и современные технологии для вашей трансформации.</p>
+          <p data-i18n="about.p2">Индивидуальный подход: диагностика по типу энергетики, персональная корзина средств, наставник и AI-поддержка 24/7.</p>
+          <div class="about__stats">
+            <div class="stat"><span class="stat__num">500+</span><span class="stat__label" data-i18n="about.students">учеников</span></div>
+            <div class="stat"><span class="stat__num">12</span><span class="stat__label" data-i18n="about.practices">практик</span></div>
+            <div class="stat"><span class="stat__num">4</span><span class="stat__label" data-i18n="about.langs">языка</span></div>
+            <div class="stat"><span class="stat__num">24/7</span><span class="stat__label" data-i18n="about.support">поддержка</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Направления -->
+  <section class="section section--dark" id="directions">
+    <div class="container">
+      <h2 class="section__title" data-i18n="dir.title">Направления</h2>
+      <div class="directions__grid">
+        <div class="card card--direction">
+          <div class="card__icon">🧘</div>
+          <h3 data-i18n="dir.yoga">Космо Йога</h3>
+          <p data-i18n="dir.yoga.desc">Уникальная система практик, объединяющая телесную работу и энергетическое развитие</p>
+        </div>
+        <div class="card card--direction">
+          <div class="card__icon">🫧</div>
+          <h3 data-i18n="dir.body">Телесные практики</h3>
+          <p data-i18n="dir.body.desc">Каждую неделю по выходным. Видеозаписи доступны 7 дней</p>
+        </div>
+        <div class="card card--direction">
+          <div class="card__icon">🔮</div>
+          <h3 data-i18n="dir.meditation">Медитации</h3>
+          <p data-i18n="dir.meditation.desc">Аудио-медитации по времени суток и целям. Мантры и энергетические треки</p>
+        </div>
+        <div class="card card--direction">
+          <div class="card__icon">🏔</div>
+          <h3 data-i18n="dir.retreat">Ретриты</h3>
+          <p data-i18n="dir.retreat.desc">Раз в месяц. Лекции, энергетические сеансы, ритуалы. Оффлайн-семинары 2 раза в год</p>
+        </div>
+        <div class="card card--direction">
+          <div class="card__icon">🎓</div>
+          <h3 data-i18n="dir.webinar">Вебинары</h3>
+          <p data-i18n="dir.webinar.desc">Ежемесячно: лекция + энергетический сеанс. Синхронный перевод на 4 языка</p>
+        </div>
+        <div class="card card--direction">
+          <div class="card__icon">👶</div>
+          <h3 data-i18n="dir.kids">Детский блок</h3>
+          <p data-i18n="dir.kids.desc">Специальные практики и коммуникация для детей до 16 лет</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Квиз-Диагностика -->
+  <section class="section" id="quiz">
+    <div class="container">
+      <h2 class="section__title" data-i18n="quiz.title">Диагностика</h2>
+      <p class="section__desc" data-i18n="quiz.desc">Определите свой тип энергетики и получите персональные рекомендации</p>
+
+      <div class="quiz-tabs">
+        <button class="quiz-tab active" data-tab="lung" data-i18n="quiz.tab.lung">Тест по лунгам</button>
+        <button class="quiz-tab" data-tab="matrix" data-i18n="quiz.tab.matrix">Матрица судьбы</button>
+      </div>
+
+      <!-- Тест по лунгам -->
+      <div class="quiz__container" id="lungQuiz">
+        <div class="quiz__progress">
+          <div class="quiz__progress-bar" id="quizProgress"></div>
+        </div>
+        <div class="quiz__step active" data-step="0">
+          <h3 data-i18n="quiz.q1">Как вы чаще всего чувствуете себя утром?</h3>
+          <div class="quiz__options">
+            <button class="quiz__option" data-type="wind" data-i18n="quiz.q1.a1">Легкость, подвижность, тревожность</button>
+            <button class="quiz__option" data-type="bile" data-i18n="quiz.q1.a2">Энергичность, решительность, жар</button>
+            <button class="quiz__option" data-type="phlegm" data-i18n="quiz.q1.a3">Спокойствие, тяжесть, медлительность</button>
+          </div>
+        </div>
+        <div class="quiz__step" data-step="1">
+          <h3 data-i18n="quiz.q2">Какой тип питания вам ближе?</h3>
+          <div class="quiz__options">
+            <button class="quiz__option" data-type="wind" data-i18n="quiz.q2.a1">Перекусы, нерегулярное питание</button>
+            <button class="quiz__option" data-type="bile" data-i18n="quiz.q2.a2">Острое, пряное, обильное</button>
+            <button class="quiz__option" data-type="phlegm" data-i18n="quiz.q2.a3">Сладкое, молочное, тяжёлое</button>
+          </div>
+        </div>
+        <div class="quiz__step" data-step="2">
+          <h3 data-i18n="quiz.q3">Как вы реагируете на стресс?</h3>
+          <div class="quiz__options">
+            <button class="quiz__option" data-type="wind" data-i18n="quiz.q3.a1">Тревога, бессонница, суетливость</button>
+            <button class="quiz__option" data-type="bile" data-i18n="quiz.q3.a2">Раздражение, гнев, нетерпеливость</button>
+            <button class="quiz__option" data-type="phlegm" data-i18n="quiz.q3.a3">Замкнутость, апатия, переедание</button>
+          </div>
+        </div>
+        <div class="quiz__step" data-step="3">
+          <h3 data-i18n="quiz.q4">Ваше телосложение?</h3>
+          <div class="quiz__options">
+            <button class="quiz__option" data-type="wind" data-i18n="quiz.q4.a1">Худощавое, лёгкое</button>
+            <button class="quiz__option" data-type="bile" data-i18n="quiz.q4.a2">Среднее, мускулистое</button>
+            <button class="quiz__option" data-type="phlegm" data-i18n="quiz.q4.a3">Крупное, плотное</button>
+          </div>
+        </div>
+        <div class="quiz__step" data-step="4">
+          <h3 data-i18n="quiz.q5">Какой сон у вас обычно?</h3>
+          <div class="quiz__options">
+            <button class="quiz__option" data-type="wind" data-i18n="quiz.q5.a1">Лёгкий, прерывистый</button>
+            <button class="quiz__option" data-type="bile" data-i18n="quiz.q5.a2">Умеренный, яркие сны</button>
+            <button class="quiz__option" data-type="phlegm" data-i18n="quiz.q5.a3">Глубокий, долгий</button>
+          </div>
+        </div>
+
+        <!-- Результат -->
+        <div class="quiz__result" id="quizResult" style="display:none">
+          <div class="result__icon" id="resultIcon"></div>
+          <h3 id="resultTitle"></h3>
+          <p id="resultDesc"></p>
+          <div class="result__recommendations" id="resultRecs"></div>
+          <a href="#box" class="btn btn--primary" data-i18n="quiz.tobox">Собрать персональную коробку</a>
+        </div>
+      </div>
+
+      <!-- Матрица судьбы -->
+      <div class="quiz__container" id="matrixQuiz" style="display:none">
+        <div class="matrix__form">
+          <h3 data-i18n="matrix.title">Введите дату рождения</h3>
+          <input type="date" id="birthDate" class="matrix__input">
+          <button class="btn btn--primary" id="calcMatrix" data-i18n="matrix.calc">Рассчитать</button>
+        </div>
+        <div class="matrix__result" id="matrixResult" style="display:none">
+          <div class="matrix__visual" id="matrixVisual"></div>
+          <h3 id="matrixTitle"></h3>
+          <p id="matrixDesc"></p>
+          <div id="matrixBlocks"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Персональная коробка -->
+  <section class="section section--dark" id="box">
+    <div class="container">
+      <h2 class="section__title" data-i18n="box.title">Персональная коробка</h2>
+      <p class="section__desc" data-i18n="box.desc">Подберите средства для вашей трансформации на основе диагностики</p>
+
+      <div class="box__grid">
+        <div class="box__category">
+          <h4 data-i18n="box.oils">Эфирные масла</h4>
+          <div class="box__items" id="boxOils">
+            <label class="box__item"><input type="checkbox" value="lavender"><span>Лаванда</span><em>успокоение</em></label>
+            <label class="box__item"><input type="checkbox" value="eucalyptus"><span>Эвкалипт</span><em>очищение</em></label>
+            <label class="box__item"><input type="checkbox" value="sandalwood"><span>Сандал</span><em>медитация</em></label>
+            <label class="box__item"><input type="checkbox" value="peppermint"><span>Мята</span><em>энергия</em></label>
+          </div>
+        </div>
+        <div class="box__category">
+          <h4 data-i18n="box.supplements">Витамины и капсулы</h4>
+          <div class="box__items" id="boxSupplements">
+            <label class="box__item"><input type="checkbox" value="ashwagandha"><span>Ашваганда</span><em>стресс</em></label>
+            <label class="box__item"><input type="checkbox" value="turmeric"><span>Куркума</span><em>воспаление</em></label>
+            <label class="box__item"><input type="checkbox" value="magnesium"><span>Магний</span><em>нервная система</em></label>
+            <label class="box__item"><input type="checkbox" value="omega3"><span>Омега-3</span><em>мозг</em></label>
+          </div>
+        </div>
+        <div class="box__category">
+          <h4 data-i18n="box.incense">Благовония</h4>
+          <div class="box__items" id="boxIncense">
+            <label class="box__item"><input type="checkbox" value="nag-champa"><span>Наг Чампа</span><em>палочки</em></label>
+            <label class="box__item"><input type="checkbox" value="palo-santo"><span>Пало Санто</span><em>дерево</em></label>
+            <label class="box__item"><input type="checkbox" value="white-sage"><span>Белый шалфей</span><em>порошок</em></label>
+            <label class="box__item"><input type="checkbox" value="frankincense"><span>Ладан</span><em>смола</em></label>
+          </div>
+        </div>
+        <div class="box__category">
+          <h4 data-i18n="box.accessories">Аксессуары</h4>
+          <div class="box__items" id="boxAccessories">
+            <label class="box__item"><input type="checkbox" value="pillow"><span>Подушка для медитации</span><em>гречка/лаванда</em></label>
+            <label class="box__item"><input type="checkbox" value="belt"><span>Пояс для медитации</span><em>поддержка</em></label>
+            <label class="box__item"><input type="checkbox" value="sleep-mask"><span>Повязка для сна</span><em>шёлк</em></label>
+            <label class="box__item"><input type="checkbox" value="h2-bottle"><span>Водородная бутылка</span><em>вода</em></label>
+            <label class="box__item"><input type="checkbox" value="tea-cup"><span>Термокружка для чая</span><em>керамика</em></label>
+          </div>
+        </div>
+        <div class="box__category">
+          <h4 data-i18n="box.tea">Чай</h4>
+          <div class="box__items" id="boxTea">
+            <label class="box__item"><input type="checkbox" value="calm-tea"><span>Успокаивающий сбор</span><em>вечер</em></label>
+            <label class="box__item"><input type="checkbox" value="energy-tea"><span>Энергетический сбор</span><em>утро</em></label>
+            <label class="box__item"><input type="checkbox" value="detox-tea"><span>Детокс сбор</span><em>очищение</em></label>
+            <label class="box__item"><input type="checkbox" value="meditation-tea"><span>Чай для медитации</span><em>фокус</em></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="box__summary">
+        <h4 data-i18n="box.your">Ваша коробка:</h4>
+        <div id="boxSummary" class="box__summary-list">Выберите элементы выше</div>
+        <div class="box__price">
+          <span data-i18n="box.from">от</span> <strong id="boxPrice">0</strong> ₽
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Пакеты -->
+  <section class="section" id="packages">
+    <div class="container">
+      <h2 class="section__title" data-i18n="pkg.title">Пакеты</h2>
+      <p class="section__desc" data-i18n="pkg.desc">Выберите формат сопровождения</p>
+
+      <div class="packages__grid">
+        <!-- Онлайн -->
+        <div class="card card--package">
+          <div class="card__badge" data-i18n="pkg.online.badge">Онлайн</div>
+          <h3 data-i18n="pkg.online.title">Цифровой путь</h3>
+          <div class="card__price"><span>9 900</span> ₽/мес</div>
+          <ul class="card__features">
+            <li data-i18n="pkg.f.meditation">Все медитации и мантры</li>
+            <li data-i18n="pkg.f.webinars">Ежемесячные вебинары</li>
+            <li data-i18n="pkg.f.body">Телесные практики (запись)</li>
+            <li data-i18n="pkg.f.bot">AI-бот поддержки 24/7</li>
+            <li data-i18n="pkg.f.community">Сообщество</li>
+            <li data-i18n="pkg.f.tracker">Трекер энергетики</li>
+            <li data-i18n="pkg.f.tests">Тесты и прогресс</li>
+          </ul>
+          <div class="card__terms">
+            <button class="term active" data-months="1">1 мес</button>
+            <button class="term" data-months="6">6 мес <em>-15%</em></button>
+            <button class="term" data-months="12">12 мес <em>-25%</em></button>
+          </div>
+          <a href="#contact" class="btn btn--primary" data-i18n="pkg.cta">Оставить заявку</a>
+        </div>
+
+        <!-- Онлайн + Наставник -->
+        <div class="card card--package card--featured">
+          <div class="card__badge" data-i18n="pkg.mentor.badge">Популярный</div>
+          <h3 data-i18n="pkg.mentor.title">С наставником</h3>
+          <div class="card__price"><span>24 900</span> ₽/мес</div>
+          <ul class="card__features">
+            <li data-i18n="pkg.f.all-online">Всё из «Цифровой путь»</li>
+            <li data-i18n="pkg.f.mentor">Персональный наставник</li>
+            <li data-i18n="pkg.f.live">Телесные практики (LIVE)</li>
+            <li data-i18n="pkg.f.box">Персональная коробка</li>
+            <li data-i18n="pkg.f.diagnosis">Полная диагностика</li>
+            <li data-i18n="pkg.f.plan">Индивидуальный план</li>
+            <li data-i18n="pkg.f.aura">Проверка ауры</li>
+          </ul>
+          <div class="card__terms">
+            <button class="term active" data-months="1">1 мес</button>
+            <button class="term" data-months="6">6 мес <em>-15%</em></button>
+            <button class="term" data-months="12">12 мес <em>-25%</em></button>
+          </div>
+          <a href="#contact" class="btn btn--primary" data-i18n="pkg.cta">Оставить заявку</a>
+        </div>
+
+        <!-- Полный -->
+        <div class="card card--package">
+          <div class="card__badge" data-i18n="pkg.full.badge">Максимум</div>
+          <h3 data-i18n="pkg.full.title">Полная трансформация</h3>
+          <div class="card__price"><span>49 900</span> ₽/мес</div>
+          <ul class="card__features">
+            <li data-i18n="pkg.f.all-mentor">Всё из «С наставником»</li>
+            <li data-i18n="pkg.f.retreats">Ежемесячные ретриты</li>
+            <li data-i18n="pkg.f.offline">Оффлайн-семинары (2/год)</li>
+            <li data-i18n="pkg.f.kids">Детский блок</li>
+            <li data-i18n="pkg.f.translate">Синхронный перевод</li>
+            <li data-i18n="pkg.f.priority">Приоритетная поддержка</li>
+            <li data-i18n="pkg.f.crypto">Оплата криптовалютой</li>
+          </ul>
+          <div class="card__terms">
+            <button class="term active" data-months="1">1 мес</button>
+            <button class="term" data-months="6">6 мес <em>-15%</em></button>
+            <button class="term" data-months="12">12 мес <em>-25%</em></button>
+          </div>
+          <a href="#contact" class="btn btn--primary" data-i18n="pkg.cta">Оставить заявку</a>
+        </div>
+
+        <!-- Только медитации -->
+        <div class="card card--package card--compact">
+          <div class="card__badge" data-i18n="pkg.med.badge">Лайт</div>
+          <h3 data-i18n="pkg.med.title">Только медитации</h3>
+          <div class="card__price"><span>3 900</span> ₽/мес</div>
+          <ul class="card__features">
+            <li data-i18n="pkg.f.meditation">Все медитации и мантры</li>
+            <li data-i18n="pkg.f.music">Энергетическая музыка</li>
+            <li data-i18n="pkg.f.bot">AI-бот поддержки 24/7</li>
+            <li data-i18n="pkg.f.community">Сообщество</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline" data-i18n="pkg.cta">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Трекер (превью) -->
+  <section class="section section--dark" id="tracker">
+    <div class="container">
+      <h2 class="section__title" data-i18n="tracker.title">Трекер энергетики</h2>
+      <p class="section__desc" data-i18n="tracker.desc">Отслеживайте свой прогресс и состояние энергии</p>
+      <div class="tracker__preview">
+        <div class="tracker__card">
+          <div class="tracker__ring" id="energyRing">
+            <svg viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="52" stroke="rgba(255,255,255,0.1)" stroke-width="8" fill="none"/>
+              <circle cx="60" cy="60" r="52" stroke="url(#grad)" stroke-width="8" fill="none"
+                      stroke-dasharray="327" stroke-dashoffset="98" stroke-linecap="round"
+                      transform="rotate(-90 60 60)"/>
+              <defs><linearGradient id="grad"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#6ee7b7"/></linearGradient></defs>
+            </svg>
+            <span class="tracker__value">70%</span>
+          </div>
+          <h4 data-i18n="tracker.energy">Уровень энергии</h4>
+        </div>
+        <div class="tracker__metrics">
+          <div class="tracker__metric"><span>12</span><small data-i18n="tracker.meditations">медитаций</small></div>
+          <div class="tracker__metric"><span>8</span><small data-i18n="tracker.practices">практик</small></div>
+          <div class="tracker__metric"><span>3</span><small data-i18n="tracker.tests">тестов</small></div>
+          <div class="tracker__metric"><span>21</span><small data-i18n="tracker.days">день подряд</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты / Заявка -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section__title" data-i18n="contact.title">Оставить заявку</h2>
+      <form class="contact__form" id="contactForm">
+        <input type="text" placeholder="Имя" required data-i18n-placeholder="contact.name">
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Телефон" data-i18n-placeholder="contact.phone">
+        <select id="packageSelect">
+          <option value="" data-i18n="contact.select">Выберите пакет</option>
+          <option value="meditation" data-i18n="pkg.med.title">Только медитации</option>
+          <option value="online" data-i18n="pkg.online.title">Цифровой путь</option>
+          <option value="mentor" data-i18n="pkg.mentor.title">С наставником</option>
+          <option value="full" data-i18n="pkg.full.title">Полная трансформация</option>
+        </select>
+        <textarea placeholder="Комментарий" rows="3" data-i18n-placeholder="contact.comment"></textarea>
+        <button type="submit" class="btn btn--primary btn--full" data-i18n="contact.submit">Отправить заявку</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">✦ CosmoYoga</div>
+          <p data-i18n="footer.copy">Путь к гармонии через древние практики</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.payment">Способы оплаты</h4>
+          <p>Visa / Mastercard / PayPal / QR / Crypto</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.social">Сообщество</h4>
+          <p>Telegram / Instagram</p>
+        </div>
+      </div>
+      <p class="footer__bottom">© 2026 CosmoYoga. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AI Chat Widget -->
+  <div class="chat-widget" id="chatWidget">
+    <button class="chat-widget__btn" id="chatToggle">
+      <span class="chat-widget__icon">💬</span>
+      <span class="chat-widget__badge">AI</span>
+    </button>
+    <div class="chat-widget__window" id="chatWindow" style="display:none">
+      <div class="chat__header">
+        <span data-i18n="chat.title">AI Помощник</span>
+        <button id="chatClose">✕</button>
+      </div>
+      <div class="chat__messages" id="chatMessages">
+        <div class="chat__msg chat__msg--bot" data-i18n="chat.welcome">Здравствуйте! Я AI-помощник CosmoYoga. Чем могу помочь?</div>
+      </div>
+      <div class="chat__input">
+        <input type="text" id="chatInput" placeholder="Напишите сообщение..." data-i18n-placeholder="chat.placeholder">
+        <button id="chatSend">→</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
